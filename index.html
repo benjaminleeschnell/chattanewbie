@@ -31,7 +31,19 @@
           <img src="img/logo.png">
         </div>
         <div class="banner">
-        
+          <p>Are you a(n) <label for="type"></label><select id="type" name="user_type">
+            <option value="individual">Individual</option>
+            <option value="couple">Couple (no kids)</option>
+            <option value="family">Family with Kids</option>
+          </select> searching for 
+          <label for="activity"></label><select id="activity" name="user_activity">
+            <option value="adventure">Outdoor Adventure</option>
+            <option value="restaurants">The Best Chattanooga Restaurants</option>
+            <option value="kids">The Best Activities for Kids</option>
+            <option value="bars">The Best Bars/Nightlife</option>
+            <option value="music">The Best Music Venues</option>
+            <option value="individual">Historical Sites</option>
+          </select> ? <img> </p>
         </div>
         <div class="slider">
           
@@ -110,28 +122,31 @@
 <!-- End Paths Gallery -->
 
 
-
 <!-- Begin Footer -->
-      <hr>
+      
       <div id="footer">
-        <h5 class=""> CONNECT WITH CHATTANEWBIE </h5>
-        <ul>
-          <li><img></li>
-          <li><img></li>
-          <li><img></li>
-          <li><img></li>
+        <div class="social">
+        <h5 class="footer_h5"> CONNECT WITH CHATTANEWBIE </h5>
+        <ul >
+          <li><a href="http://www.facebook.com" target=_blank><img src="img/facebook_icon.png"></a></li>
+          <li><a href="http://www.pinterest.com" target=_blank><img src="img/pinterest_icon.png"></a></li>
+          <li><a href="http://www.twitter.com" target=_blank><img src="img/twitter_icon.png"></a></li>
+          <li><a href="http://www.instagram.com" target=_blank><img src="img/instagram_icon.png"></a></li>
         </ul>
-        <hr>
+      </div>
+        <div class="footer_links">
         <ul>
           <li>About Chattanewbie</li>
           <li>Chattanewbie's Team</li>
-          <li>Chattanewbie's Team</li>
+          <li>Placeholder</li>
           <li>How It Works</li>
           <li>Community Guidelines</li>
           <li>Terms of Use</li>
         </ul>
       </div>
+      </div>
 <!-- End Footer -->
+
 <!-- jQuery -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
