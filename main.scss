@@ -1,0 +1,284 @@
+$font-stack:   Roboto Condensed;
+$primary-color: #000000;
+$secondary-color: #f99521;
+$tertiary-color: #d76422;
+$quaternary-color: #fefefe;
+$opacity-color: rgba(255, 255, 255, 0.5);
+$default-padding: 1% 0px;
+$default-margin: 5% 10%;
+
+
+/*GLOBAL TYPOGRAPHY*/
+
+body {
+   font: 100% $font-stack;
+   color: $primary-color;
+
+}
+
+h1 {
+  font: 100% $font-stack;
+  color: $primary-color;
+  font-size: 2em;
+
+}
+
+h2 {
+  font: 100% $font-stack;
+  color: $secondary-color;
+  font-size: 1.5em;
+  text-align: center;
+
+}
+
+h3 {
+  font: 100% $font-stack;
+  color: $primary-color;
+  font-size: 1.25em;
+  text-align: center;
+
+}
+
+h4 {
+  font: 100% $font-stack;
+  color: $primary-color;
+  font-size: 1.25em;
+  font-weight: 600;
+
+}
+
+h5 {
+  font: 100% $font-stack;
+  color: $secondary-color;
+  font-size: 1.5em;
+
+}
+
+p {
+  font: 100% $font-stack;
+  color: $primary-color;
+  font-size: .75em;
+
+}
+
+a {
+    font: 100% $font-stack;
+    color: $tertiary-color;
+
+}
+
+img {
+  max-width: 100%;
+}
+
+/* LOGO */
+
+.hero {
+  background: url('img/hero.jpg') center center no-repeat;
+  background-image: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+    ), url('img/hero.jpg');
+  height: 90vh;
+  width:100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: -4%; 
+}
+
+.logo {
+	
+	img {
+		max-width: 50%;
+		margin-top: 30%;
+		text-align: center;
+	}
+}
+
+/* NAVIGATION */
+
+nav {
+  ul {
+    padding: 10px 10px;
+    list-style: none;
+    float: left;
+    margin: 65px 30px;
+
+  }
+
+  li { 
+    display: inline-block; 
+    margin: 0 10px;
+    background-color: $secondary-color;
+    font-family: $font-stack;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    padding-top: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+  }
+}
+
+/* HOME BANNER */
+.banner{
+  /* HTML NOTE - ADD class="banner" to div*/
+  text-align: center;
+  margin: 15% 4% 15% 4%;
+  padding: 0 4% 0 4%;
+
+}
+
+.h1transparency {
+  /* HTML NOTE - ADD class="h1transparency" to h1*/
+    padding: 2%;
+   /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(255, 255, 255);
+    /* RGBa with opacity */
+    background-color: $opacity-color;
+
+}
+
+/* GALLERY 1 */
+/* HTML NOTE - ADD h3 tag to titles not p tag*/
+.gallery1 {
+    // padding: $default-padding;
+    // margin: $default-margin;  
+}
+
+
+/* Featured Newbie */
+
+.feature {
+    padding: $default-padding;
+    margin: $default-margin; 
+}
+
+
+.oftheweek {  
+    
+}
+
+.wherefrom {
+   }
+
+
+/* gallery */
+
+#gallery {
+  margin: 2% 0 2% -3.01%;
+
+  li { 
+    display: inline-block;
+    float: center;
+    margin: 0 -2px;
+    width: 33.44%;
+    }
+}
+
+.box {
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  
+  img {
+    position: absolute;
+    left: 0;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out; 
+    }
+  }
+
+.box .overbox {
+  background-color: rgba(105, 105, 105, 0.9);
+  position: absolute;
+  top: 130px;
+  left: 0;
+  color: #fff;
+  z-index: 100;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  opacity: 0;
+  width: 100%;
+  height: 120px;
+}
+
+.box:hover .overbox {
+  opacity: 0.8; }
+
+.box .overtext .orange-line {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(40px);
+  -webkit-transform: translateY(40px); }
+
+ .orange-line {
+    background-color: $tertiary-color;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+
+.box .title {
+  // 
+  opacity: 0;
+  transition-delay: 0.1s;
+  transition-duration: 0.2s; }
+
+.box:hover .title,
+.box:focus .title {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px); }
+
+.text {
+  font-size: 0.75em;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.2s;
+  line-height: 1.5em;
+  padding: 7% 15%; }
+
+.box:hover .text,
+.box:focus .text {
+  opacity: 1;
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px); }
+
+
+/* GALLERY 2 */
+.gallery2 {
+    padding: $default-padding;
+    margin: $default-margin;  
+
+}
+
+/*Footer*/
+/* HTML NOTE - ADD div id=Footer*/
+#footer {
+    padding: $default-padding;
+    margin: $default-margin; 
+}
