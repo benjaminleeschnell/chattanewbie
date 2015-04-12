@@ -78,7 +78,7 @@ img {
   background-image: 
   linear-gradient(
     rgba(0, 0, 0, 1),
-    rgba(112, 128, 144, 0.7)
+    rgba(105, 105, 105, 0.7)
     ), url('../img/hero.jpg');
   height: 90vh;
   width:100%;
@@ -104,7 +104,7 @@ img {
 
 nav {
   ul {
-    padding: 10px 10px;
+    padding: 20px 10px;
     list-style: none;
     float: left;
     margin: 65px 0 0 30px;
@@ -132,7 +132,7 @@ nav {
 }
 
 /* HOME BANNER */
-.banner{
+.banner {
   /* HTML NOTE - ADD class="banner" to div*/
   text-align: center;
   margin: 2% 4% 15% 4%;
@@ -144,7 +144,44 @@ nav {
   color: white;
  }
 
+a {
+  text-decoration: none;
 }
+}
+
+.search-button {
+  padding: 0 0 0 0;
+  margin: 0 0 -10px 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.type select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   color: #778899;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+   }
+
+   .type {
+   width: 240px;
+   height: 34px;
+   overflow: auto;
+   background: url(../img/down-arrow.png) no-repeat right #ddd;
+   border: 1px solid #ccc;
+
+   option {
+    color: #ccc;
+   }
+   }
 
 .h1transparency {
   /* HTML NOTE - ADD class="h1transparency" to h1*/
@@ -156,28 +193,16 @@ nav {
 
 }
 
-/* GALLERY 1 */
-/* HTML NOTE - ADD h3 tag to titles not p tag*/
-.gallery1 {
-    // padding: $default-padding;
-    // margin: $default-margin;  
+
+
+
+
+/* Subscribe Section */
+
+.mailchimp_form {
+  width:100%;
+  text-align: center;
 }
-
-
-/* Featured Newbie */
-
-.feature {
-    padding: $default-padding;
-    margin: $default-margin; 
-}
-
-
-.oftheweek {  
-    
-}
-
-.wherefrom {
-   }
 
 
 /* gallery */
@@ -190,7 +215,13 @@ nav {
     float: center;
     margin: 0 -2px;
     width: 33.44%;
+    text-align: center;
     }
+}
+
+.stars {
+  padding: 0 0 0 0;
+  margin: 0 0 10px 10px;
 }
 
 .box {
@@ -277,18 +308,46 @@ nav {
   -webkit-transform: translateX(0px); }
 
 
-/* GALLERY 2 */
-.gallery2 {
+/* Featured Newbie */
+
+.feature {
     padding: $default-padding;
-    margin: $default-margin;  
+    margin: $default-margin; 
 
 }
+
+.user_description {  
+    float:left;
+    width:40%;
+}
+
+.user_image {
+  height:250px;
+  width: 250px;
+  align: right;
+  float:right;
+  padding: 0 5%;
+}
+
+.wherefrom {
+  width:100%;
+  text-align: center;
+  padding-left: 5%;
+   }
+
+
+/* GALLERY 2 */
+.gallery2 {
+    width: 100%;
+    text-align: center;
+}
+
 
 /*Footer*/
 /* HTML NOTE - ADD div id=Footer*/
 #footer {
     padding:  1% 0px;
-    margin: 5% 10%; 
+    margin: 5% 2%; 
     border-top: solid $secondary-color;
 }
 
