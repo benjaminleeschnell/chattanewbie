@@ -74,12 +74,12 @@ img {
 /* LOGO */
 
 .hero {
-  background: url('../img/hero.jpg') center center no-repeat;
-  background-image: 
-  linear-gradient(
-    rgba(0, 0, 0, 1),
-    rgba(105, 105, 105, 0.7)
-    ), url('../img/hero.jpg');
+  background: url('../img/heroImage.png') center center no-repeat;
+ // background-image: 
+  // linear-gradient(
+  //   rgba(0, 0, 0, 1),
+  //   rgba(105, 105, 105, 0.7)
+  //   ), url('../img/heroImage.png');
   height: 90vh;
   width:100%;
   -webkit-background-size: cover;
@@ -147,8 +147,12 @@ nav {
 a {
   text-decoration: none;
 }
-}
 
+span {
+  color: white;
+  font-size: 1.3em;
+}
+}
 .search-button {
   padding: 0 0 0 0;
   margin: 0 0 -10px 0;
@@ -159,7 +163,7 @@ a {
 }
 
 .type select {
-   background: transparent;
+   background: white;
    width: 268px;
    padding: 5px;
    font-size: 16px;
@@ -169,6 +173,7 @@ a {
    border-radius: 0;
    height: 34px;
    -webkit-appearance: none;
+   -moz-appearance: none;
    }
 
    .type {
@@ -177,11 +182,12 @@ a {
    overflow: auto;
    background: url(../img/down-arrow.png) no-repeat right #ddd;
    border: 1px solid #ccc;
+   }
 
-   option {
-    color: #ccc;
-   }
-   }
+optgroup {
+  color: #000;
+}
+
 
 .h1transparency {
   /* HTML NOTE - ADD class="h1transparency" to h1*/
