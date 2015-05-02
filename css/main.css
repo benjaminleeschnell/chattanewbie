@@ -61,13 +61,27 @@ img {
   margin-left: -3%;
   text-align: center; }
 
+.smaller-logo img {
+  display: inline-block;
+  width: 140px;
+  margin-top: 0%;
+  margin-left: 3%;
+  float:left;}
+
 /* NAVIGATION */
 nav ul {
   padding: 20px 10px;
   list-style: none;
   float: left;
   margin: 65px 0 0 30px; }
-nav li {
+
+.small-nav ul {
+  padding: 10px;
+  list-style: none;
+  float: right;
+  margin: 0px 0 0 30px; }
+
+nav li, .small-nav li {
   display: inline-block;
   margin: 0 10px;
   background-color: #f99521;
@@ -75,7 +89,8 @@ nav li {
   height: 40px;
   width: 150px;
   border-radius: 5px; }
-nav a {
+
+nav a, .small-nav a{
   display: block;
   text-align: center;
   padding-top: 8px;
@@ -121,6 +136,8 @@ nav a {
   -moz-appearance: none; }
 
 .type {
+  color: #000 !important;
+  background-color: #fff !important;
   width: 240px;
   height: 34px;
   overflow: auto;
@@ -144,14 +161,6 @@ optgroup {
   text-align: center; }
 
 /* gallery */
-#gallery {
-  margin: 2% 0 2% -3.01%; }
-  #gallery li {
-    display: inline-block;
-    float: center;
-    margin: 0 -2px;
-    width: 33.44%;
-    text-align: center; }
 
 .stars {
   padding: 0 0 0 0;
@@ -235,13 +244,7 @@ optgroup {
   -webkit-transform: translateX(0px); }
 
 /* Featured Newbie */
-.feature {
-  padding: 1% 0px;
-  margin: 5% 10%; }
 
-.user_description {
-  float: left;
-  width: 40%; }
 
 .user_image {
   height: 250px;
@@ -250,18 +253,15 @@ optgroup {
   float: right;
   padding: 0 5%; }
 
-.wherefrom {
-  width: 100%;
-  text-align: center;
-  padding-left: 5%; }
 
 /* GALLERY 2 */
 .gallery2 {
-  width: 100%;
-  text-align: center; }
+  float:left;
+}
+
 
 /*Footer*/
-/* HTML NOTE - ADD div id=Footer*/
+
 #footer {
   padding: 1% 0px;
   margin: 5% 2%;
@@ -281,7 +281,7 @@ optgroup {
   padding: 0 0 0 8%;
   margin: 0 0 0 0;
   float: left;
-  width: 33%; }
+  }
 
 .social li {
   margin: 0 30px 0 0; }
@@ -293,8 +293,7 @@ optgroup {
 .footer_links {
   float: left;
   padding: 0 0 0 0;
-  margin: 10;
-  width: 59%; }
+  margin: 10; }
 
 .footer_links ul {
   -webkit-column-count: 3;
@@ -311,3 +310,41 @@ optgroup {
   width: 70%; }
 
 /*# sourceMappingURL=main.css.map */
+
+
+@media screen and (max-width: 900px) {    
+
+  .footer_links ul {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;}
+
+}
+
+@media screen and (max-width: 620px) {    
+
+  .smaller-logo img {
+    display: inline-block;
+    width: 140px;
+    margin-top: 0%;
+    margin-left: 3%;
+    float:left;}
+
+  .small-nav li {
+    display: inline-block;
+    margin: 0 10px;
+    background-color: #f99521;
+    font-family: Roboto Condensed;
+    height: 30px;
+    width: 70px;
+    border-radius: 5px; }
+
+  .small-nav a{
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: .9em; }
+
+}    
