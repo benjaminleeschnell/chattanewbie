@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/grid.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/form.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -40,36 +41,170 @@
         </div> <!-- container -->
     </div> <!-- nav-container -->
 
-    <div class="form-container">            
-      <div class="container">
+     <div class="main-container">
+       <div class="container">
+       
+        <div class="form-container">
+       
+        <h5>CREATE AN ACCOUNT</h5>
 
-        <div class="feature">
-        
-        <div id="wufoo-q1gvqckh0oryjz3">
-        Fill out my <a href="https://codexx.wufoo.com/forms/q1gvqckh0oryjz3">online form</a>.
-        </div>
-        <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Use <a href="http://www.wufoo.com/partners/">Wufoo integrations</a> and get your data to your favorite apps.</div>
-        <script type="text/javascript">var q1gvqckh0oryjz3;(function(d, t) {
-        var s = d.createElement(t), options = {
-        'userName':'codexx',
-        'formHash':'q1gvqckh0oryjz3',
-        'autoResize':true,
-        'height':'814',
-        'async':true,
-        'host':'wufoo.com',
-        'header':'show',
-        'ssl':true};
-        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-        s.onload = s.onreadystatechange = function() {
-        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-        try { q1gvqckh0oryjz3 = new WufooForm();q1gvqckh0oryjz3.initialize(options);q1gvqckh0oryjz3.display(); } catch (e) {}};
-        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-        })(document, 'script');</script>
+<form id="form3" name="form3" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+      action="process.php">
+  
+<header id="header" class="info">
 
+<div>Create a Chattanewbie account to start sharing paths.</div>
+</header>
+
+<ul>
+
+<li id="foli2" class="notranslate      ">
+<label class="desc" id="title2" for="fieldFirstName">
+Name
+</label>
+<span>
+<input id="fieldFirstName" name="fieldFirstName" type="text" class="field text fn" value="" size="8" tabindex="1" autofocus="autofocus"      />
+<label for="fieldFirstName">First</label>
+</span>
+<span>
+<input id="fieldLastName" name="fieldLastName" type="text" class="field text ln" value="" size="14" tabindex="2" />
+<label for="fieldLastName">Last</label>
+</span>
+</li>
+<li id="foli4" class="notranslate      ">
+<label class="desc" id="title4" for="fieldUsername">
+Username
+</label>
+<div>
+<input id="fieldUserName" name="fieldUsername" type="text" class="field text medium" value="" maxlength="255" tabindex="3" onkeyup=""       />
+</div>
+</li>
+<li id="foli5" class="notranslate      ">
+<label class="desc" id="title5" for="fieldEmail">
+Email
+</label>
+<div>
+<input id="fieldEmail" name="fieldEmail" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="4"       />
+</div>
+</li><li id="foli6" class="notranslate      ">
+<fieldset>
+<![if !IE | (gte IE 8)]>
+<legend id="title6" class="desc">
+What Chattanooga are you?
+</legend>
+<![endif]>
+<!--[if lt IE 8]>
+<label id="title6" class="desc opt_label">
+What Chattanooga are you?
+</label>
+<![endif]-->
+<div>
+    <input id="radioDefault_6" name="fieldExposure" type="hidden" value="" />
+<span>
+<input id="Field6_0" name="fieldExposure" type="radio" class="field radio" value="Local" tabindex="5"     required />
+<label class="choice" for="Field6_0" >
+    Local</label>
+</span>
+<span>
+<input id="Field6_1" name="fieldExposure" type="radio" class="field radio" value="Newbie" tabindex="6"     required />
+<label class="choice" for="Field6_1" >
+    Newbie</label>
+</span>
+<span>
+<input id="Field6_2" name="fieldExposure" type="radio" class="field radio" value="Visitor" tabindex="7"     required />
+<label class="choice" for="Field6_2" >
+    Visitor</label>
+</span>
+</div>
+</fieldset>
+</li><li id="foli7" class="notranslate      ">
+    <fieldset>
+        <![if !IE | (gte IE 8)]>
+        <legend id="title7" class="desc">
+            What is your family status?
+            <span id="req_7" class="req">*</span>
+        </legend>
+        <![endif]>
+        <!--[if lt IE 8]>
+        <label id="title7" class="desc">
+            What is your family status?
+            <span id="req_7" class="req">*</span>
+        </label>
+        <![endif]-->
+        <div>
+            <input id="radioDefault_7" name="fieldFamily" type="hidden" value="" />
+<span>
+<input id="Field7_0" name="fieldFamily" type="radio" class="field radio" value="Single" tabindex="8"     required />
+<label class="choice" for="Field7_0" >
+    Single</label>
+</span>
+<span>
+<input id="Field7_1" name="fieldFamily" type="radio" class="field radio" value="Couple" tabindex="9"     required />
+<label class="choice" for="Field7_1" >
+    Couple</label>
+</span>
+<span>
+<input id="Field7_2" name="fieldFamily" type="radio" class="field radio" value="Family" tabindex="10"     required />
+<label class="choice" for="Field7_2" >
+    Family</label>
+</span>
         </div>
+    </fieldset>
+</li>
+    <li id="foli11" class="notranslate      ">
+        <fieldset>
+            <![if !IE | (gte IE 8)]>
+            <legend id="title11" class="desc">
+                Interests: (Pick top 3)
+            </legend>
+            <![endif]>
+            <!--[if lt IE 8]>
+            <label id="title11" class="desc">
+                Interests: (Pick top 3)
+            </label>
+<![endif]-->
+<div>
+<span>
+<input id="Field11" name="Field11" type="checkbox" class="field checkbox" value="Adventure" tabindex="11"     />
+<label class="choice" for="Field11">Adventure</label>
+</span>
+<span>
+<input id="Field12" name="Field12" type="checkbox" class="field checkbox" value="Nightlife" tabindex="12"     />
+<label class="choice" for="Field12">Nightlife</label>
+</span>
+<span>
+<input id="Field13" name="Field13" type="checkbox" class="field checkbox" value="The Arts" tabindex="13"     />
+<label class="choice" for="Field13">The Arts</label>
+</span>
+<span>
+<input id="Field14" name="Field14" type="checkbox" class="field checkbox" value="Food" tabindex="14"     />
+<label class="choice" for="Field14">Food</label>
+</span>
+<span>
+<input id="Field15" name="Field15" type="checkbox" class="field checkbox" value="Live music" tabindex="15"     />
+<label class="choice" for="Field15">Live music</label>
+</span>
+<span>
+<input id="Field16" name="Field16" type="checkbox" class="field checkbox" value="Kid-friendly" tabindex="16"     />
+<label class="choice" for="Field16">Kid-friendly</label>
+</span>
+</div>
+</fieldset>
+</li> <li class="buttons ">
+<div>
+
+                    <input id="saveForm" name="saveForm" class="btTxt submit"
+    type="submit" value="Submit"
+ /></div>
+</li>
+
+</ul>
+</form>
+
+        </div> <!-- form-container -->
 
         </div> <!-- container -->
-    </div> <!-- form-container -->
+    </div> <!-- main-container -->
 
   <div class="footer-container">            
     <div class="container">
